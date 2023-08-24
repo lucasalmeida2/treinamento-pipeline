@@ -31,15 +31,14 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
-  greet:
+  apresentacao_pessoal:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ inputs.name }}"
-
-    - name: Send greeting
-      run: echo "Hello ${{ inputs.sobrenome }}"
+    - name: Exibe Nome
+      run: echo "Seja muito bem-vindo ${{ inputs.name }}"
+    - name: Exibe Sobrenome
+      run: echo "Posso te chamar de ${{ inputs.sobrenome }} ?"
